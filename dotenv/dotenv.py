@@ -130,7 +130,7 @@ class Environment(object):
         self.env = env
 
     def update_file(self):
-        print("Backup filename is : {0}".format(self.backup_file_name))
+        # print("Backup filename is : {0}".format(self.backup_file_name))
         if self.stat:
             with open(self.file_path, 'w') as fp:
                 if len(self.comments) > 0:
