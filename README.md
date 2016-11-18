@@ -50,11 +50,10 @@ MAIL_ENCRYPTION = none
 * The order of comments ARE preserved.
 ~~* Comments cannot be in the same line with the declarations (meaning, ```DB_USER=localhost # this is databaseusername``` is illegal)~~
 * Comments CAN be used in the same line with the declarations. You just have to put a whitespace.
-```DB_PASS=supersecret#password```
-Above will assign the value ```supersecret#password``` to the ```DB_PASS``` key.
 
-```DB_PASS=supersecret #password```
-On the other hand this one will assign the value ```supersecret``` to the ```DB_PASS``` key.
+```DB_PASS=supersecret#password``` : This line will assign the value ```supersecret#password``` to the ```DB_PASS``` key.
+
+```DB_PASS=supersecret #password``` : On the other hand this one will assign the value ```supersecret``` to the ```DB_PASS``` key.
 
 ## Declarations
 * This is a valid declaration:
