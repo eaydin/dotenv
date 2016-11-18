@@ -54,7 +54,7 @@ def _get_value_from_line(line):
 
         if len(columns) == 2:
             if columns[1] == '':
-                value = False
+                value = ''
                 return value
             else:
                 value = columns[1]
