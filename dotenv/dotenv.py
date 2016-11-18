@@ -250,6 +250,7 @@ class Environment(object):
 
     def update_file(self):
         # print("Backup filename is : {0}".format(self.backup_file_name))
+        self._refresh_lists()
         if self.stat:
             with open(self.file_path, 'w') as fp:
                 for line in range(max(self.lines)+1):
