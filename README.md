@@ -55,6 +55,7 @@ All variables in that line will be "localhost"
 * This is also valid
 ```DO_BACKUP, DO_LOGROTATE```
 Notice there aren't any = signs, in this case, both variables are set to TRUE.
-* On the other hand, the following case would set the variables to FALSE:
+* On the other hand, the following case would leave the variables unset:
 ```DO BACKUP, DO LOGROTATE=```
-There are two points to case in this example. First of all, if there is a = sign but the values are not SET to anything, the script assumes the values are False (as in, there used to be a value but not anymore, so it should be False). Second point is that, the KEY values are seperated by commands but they don't contain and understand, the script will replace the whitespaces automatically, resulting in ```DO_BACKUP=FALSE``` and ```DO_LOGROTATE=FALSE```
+Note that there is an equal sign at the end, meaning they won't end up as ```True``` values automatically.
+Also note that there are no underscores between words, even though each key is seperated by a comma. The dotenv script will translate these whitespaces into underscores, resulting ```DO_BACKUP=``` and ```DO_LOGROTATE=```
