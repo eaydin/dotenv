@@ -12,7 +12,7 @@ There are numerous .env handlers for Python out there, yet none of them answered
 * Add / delete / update values from .env files
 * Understand values with = in them
 * Ignore (and preserve) comment lines
-* Ignore inlilne comments (if seperated with whitespace)
+* Ignore inline comments (if seperated with whitespace)
 * Translates whitespaces in KEY names to _ underscores 
 * Understands multiple declarations delimited with commas in the same line
 
